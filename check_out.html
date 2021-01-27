@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Site Metas -->
+	<title>Contact & Feedback</title>
+	<link rel="icon" href="/images/title bar logo.png">
+
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Site Icons -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<!-- ASHWATH -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Site CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+
+
+$(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(".box").not(targetBox).hide();
+        $(targetBox).show();
+    });
+});
+</script>
+
+</head>
+
+<body>
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/navicon.jpg" alt="" />
+
+				</a>
+
+				<h1 style="text-align: center;"> BONZER BIRYANI</h1>
+
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food"
+					aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">Our Story</a></li>
+
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						<li class="nav-item toggle-btn">
+							<a href="#" id="cart" class="cart_icon  nav-link"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">3</span></a></li>
+					</ul>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown_cart dropdown_menu">
+		<div class="container cart_container nav navbar-nav navbar-right cart-menu menu" style="display: none;">
+  		<div class="row">
+  			<div class="shopping-cart ">
+				<div class="shopping-cart-header">
+					<i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+					<div class="shopping-cart-total">
+						<span class="lighter-text">Total:</span>
+						<span class="main-color-text">Rs. 2,229.97</span>
+					</div>
+				</div>
+					<ul class="shopping-cart-items">
+				      <li class="clearfix">
+
+				        <img src="images/img-03.jpg" alt="item1" />
+				        <span class="item-name">Biryani Masala</span>
+				        <span class="item-price">Rs 849.99</span>
+				        <span class="item-quantity">Qt:
+				        	<select name="no">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+	                        </select>
+	                    </span>
+	                    <span class="delete_cart"><i class="fa fa-close"></i></span>
+				      </li>
+
+				    </ul>
+				
+  				<a href="check_out.html" class="check_out_btn">Checkout</a>
+  			</div>
+  		</div>
+  	</div>	
+  </li>
+</ul>
+  		</div>
+  	
+	</nav>
+</header>
+	<!-- End header -->
+
+	<!-- Start All Pages -->
+	<div class="all-page-title page-breadcrumb">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Check Out</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End All Pages -->
+
+	<!-- Start Contact -->
+	<section class="check-out-page mt-5 mb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="form_heading text-center">
+						<h2>Customer Details</h2>
+						<div class="border1"></div>
+					</div>
+					<div class="address_from mt-4">
+					<form method="post">
+	                    <div class="form-group">
+	                        <input type="text" required class="form-control" name="fname" placeholder="First name *">
+	                    </div>
+	                    <div class="form-group">
+	                        <input type="text" required class="form-control" name="lname" placeholder="Last name *">
+	                    </div>
+	                    <div class="form-group">
+	                        <div class="custom_select">
+	                            <select class="form-control">
+	                                <option value="">Select Your Country...</option>
+	                                <option value="MH">Maharshtra</option>
+	                            </select>
+	                        </div>
+	                    </div>
+	                    <div class="form-group">
+	                        <input type="text" class="form-control" name="billing_address" required="" placeholder="Address *">
+	                    </div>
+	                    <div class="form-group">
+	                        <input type="text" class="form-control" name="billing_address2" required="" placeholder="Address line2">
+	                    </div>
+	                    <div class="form-group">
+	                        <input class="form-control" required type="text" name="city" placeholder="City / Town *">
+	                    </div>
+	                    <div class="form-group">
+	                        <input class="form-control" required type="text" name="state" placeholder="State / County *">
+	                    </div>
+	                    <div class="form-group">
+	                        <input class="form-control" required type="text" name="zipcode" placeholder="Postcode / ZIP *">
+	                    </div>
+	                    <div class="form-group">
+	                        <input class="form-control" required type="text" name="phone" placeholder="Phone *">
+	                    </div>
+	                    <div class="form-group">
+	                        <input class="form-control" required type="text" name="email" placeholder="Email address *">
+	                    </div>
+	                    <div class="form-group check_box">
+	                        <div class="chek-form">
+	                            <div class="custome-checkbox">
+	                                <input class="form-check-input" type="checkbox" name="checkbox" id="createaccount">
+	                                <label class="form-check-label label_info" for="createaccount"><span>Create an account?</span></label>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="form-group create-account">
+	                        <input class="form-control" required type="password" placeholder="Password" name="password" >
+	                    </div>
+	                    <div class="heading_s1">
+	                        <h4>Additional information</h4>
+	                    </div>
+	                    <div class="form-group mb-0">
+	                        <textarea rows="5" class="form-control" placeholder="Order notes"></textarea>
+	                    </div>
+	                    <div class="text-center btn_regis mt-4">
+	                    	<button class="btn btn_register">Register</button>
+	                    </div>
+	                </form>
+						
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="form_heading text-center">
+						<h2>Your Orders</h2>
+						<div class="border1"></div>
+					</div>
+                <div class="order_review  mt-4">
+                    
+                    <div class="table-responsive order_table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Blue Dress For Woman <span class="product-qty">x 2</span></td>
+                                    <td>$90.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Lether Gray Tuxedo <span class="product-qty">x 1</span></td>
+                                    <td>$55.00</td>
+                                </tr>
+                                <tr>
+                                    <td>woman full sliv dress <span class="product-qty">x 3</span></td>
+                                    <td>$204.00</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>SubTotal</th>
+                                    <td class="product-subtotal">$349.00</td>
+                                </tr>
+                                <tr>
+                                    <th>Shipping</th>
+                                    <td>Free Shipping</td>
+                                </tr>
+                                <tr>
+                                    <th>Total</th>
+                                    <td class="product-subtotal">$349.00</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="payment_method">
+                        <div class="heading_s1">
+                            <h4>Payment</h4>
+                        </div>
+                        <div class="payment_option col-lg-11">
+                            <div class="custome-radio">
+                                <input class="form-check-input" required="" type="radio" name="ptype" id="dbank1" value="dbank">
+                                <label class="form-check-label" for="exampleRadios3">Direct Bank Transfer</label>
+                                <p data-method="option3" class="payment-text dbank box">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration. </p>
+                            </div>
+                            <div class="custome-radio">
+                                <input class="form-check-input" type="radio" name="ptype" id="Check" value="checkP">
+                                <label class="form-check-label" for="checkp">Check Payment</label>
+                                <p data-method="option4" class="payment-text checkP box">Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                            </div>
+                            <div class="custome-radio">
+                                <input class="form-check-input" type="radio" name="ptype" id="wallet" value="walletP">
+                                <label class="form-check-label" for="walletP">Paypal</label>
+                                <p data-method="option5" class="payment-text walletP box">Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-fill-out btn-block">Place Order</a>
+                </div>
+            </div>
+			</div>		
+		</div>		
+	</section>
+	
+
+
+	<!-- End Contact -->
+
+
+<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-lg-3 col-md-6">
+					<h3>CONTACT INFORMATION</h3>
+					<p class="lead">India, Maha</p>
+					<p class="lead">+91 8169804018</p>
+					<p><a href="#"> onepotbiryani@gmail.com</a></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>OPENING HOURS</h3>
+					<p class="lead"><span class="text-color">Mon-Fri : </span>8PM - 12AM</p>
+					<p class="lead"><span class="text-color">Sat-Sun : </span>12PM - 12AM</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>EXPLORE OUR SITE</h3>
+					<ul class="footer_link">
+						<li class="footer_link_list"><a href="#">Home</a></li>
+						<li class="footer_link_list"><a href="#">Menu</a></li>
+						<li class="footer_link_list"><a href="#">Our Story</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<ul class="list-inline f-social">
+						<li class="list-inline-item list-icon"><a href="https://www.facebook.com/onepotbiryani"><i
+									class="fa fa-facebook" aria-hidden="true"></i></a>
+						</li>
+						<li class="list-inline-item list-icon"><a
+								href="https://instagram.com/bonzerbiryani?igshid=1ss6mwi0kad4u"><i
+									class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">All Rights Reserved. &copy; 2020 <a href="index.html">Bonzer Biryani</a>
+							<span class="divider">-</span>
+							<a href="privacy.html">Terms of Service</a><br>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</footer>
+	<!-- End Footer -->
+
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;"><i class="fa fa-paper-plane-o"
+			aria-hidden="true"></i></a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- ALL PLUGINS -->
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+	<script src="js/contact-form-script.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>

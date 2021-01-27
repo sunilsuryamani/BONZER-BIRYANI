@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="images/icon.png">
+	<!-- Site Metas -->
+	<title>Bonzer Biryani</title>
+	<link rel="icon" href="/images/title bar logo.png">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+
+	<!-- ASHWATH -->
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<script>
+		$(document).ready(function(){
+		    $('#cart').click(function() {
+		      $('.menu').toggle("slide");
+		    });
+		});
+</script>
+
+</head>
+
+<body>
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/navicon.jpg" alt="" />
+
+				</a>
+
+				<h1 style="text-align: center;"> BONZER BIRYANI</h1>
+
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food"
+					aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">Our Story</a></li>
+
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						<li class="nav-item toggle-btn">
+							<a href="#" id="cart" class="cart_icon  nav-link"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">3</span></a></li>
+					</ul>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown_cart dropdown_menu">
+		<div class="container cart_container nav navbar-nav navbar-right cart-menu menu" style="display: none;">
+  		<div class="row">
+  			<div class="shopping-cart ">
+				<div class="shopping-cart-header">
+					<i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+					<div class="shopping-cart-total">
+						<span class="lighter-text">Total:</span>
+						<span class="main-color-text">Rs. 2,229.97</span>
+					</div>
+				</div>
+					<ul class="shopping-cart-items">
+				      <li class="clearfix">
+
+				        <img src="images/img-03.jpg" alt="item1" />
+				        <span class="item-name">Biryani Masala</span>
+				        <span class="item-price">Rs 849.99</span>
+				        <span class="item-quantity">Qt:
+				        	<select name="no">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+	                        </select>
+	                    </span>
+	                    <span class="delete_cart"><i class="fa fa-close"></i></span>
+				      </li>
+
+				    </ul>
+				
+  				<a href="check_out.html" class="check_out_btn">Checkout</a>
+  			</div>
+  		</div>
+  	</div>	
+  </li>
+</ul>
+  		</div>
+  	
+	</nav>
+</header>
+	<!-- End header -->
+
+	<!-- Start slides -->
+	<div id="slides" class="cover-slides">
+		<ul class="slides-container">
+			<li class="text-left">
+				<img src="images/slider-01.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>WELCOME TO <br> BONZER BIRYANI</strong></h1>
+							<p class="m-b-40">Experience the delectable flavours of India through the lens of dum-style
+								cooking.</p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="menu.html">Our Menu</a></p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-left">
+				<img src="images/slider-02.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>WELCOME TO <br>BONZER BIRYANI</strong></h1>
+							<p class="m-b-40">Experience the delectable flavours of India through the lens of dum-style
+								cooking.</p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="menu.html">Our Menu</a></p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-left">
+				<img src="images/slider-03.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>WELCOME TO <br>BONZER BIRYANI</strong></h1>
+							<p class="m-b-40">Experience the delectable flavours of India through the lens of dum-style
+								cooking.</p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="menu.html">Our Menu</a></p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="slides-navigation">
+			<a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+		</div>
+	</div>
+	<!-- End slides -->
+
+	<!-- Start About -->
+	<div class="about-section-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 text-center mt-5">
+					<div class="inner-column about_discrip">
+						<h1>A <span>BIRYANI STORY</span></h1>
+
+						<p> What makes a biryani good? Aren’t all biryanis, by definition, good?</p>
+						<p>We did some research. And it turns out, the answer is a definitive no.</p>
+						<p> If you thought everything that’s meat (or chicken, or vegetables even, for that matter)
+							cooked with rice is a biryani, then you’re mistaken...
+						</p>
+						<a class="btn btn-lg btn-circle btn-outline-new-white about_more_btn" href="about.html">Read More</a>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img src="images/IMG_20200621_220916.jpg" alt="" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End About -->
+
+	<!-- Start QT -->
+	<div class="qt-box qt-background">
+		<!-- <div class="container "> -->
+		<div class="row">
+			<div class="col-md-8 ml-auto mr-auto text-center">
+				<p class="lead ">
+					"you don't need motivational quotes.
+					you just need biryani."
+				</p>
+
+			</div>
+		</div>
+		<!-- </div> -->
+	</div>
+	<!-- End QT -->
+
+
+
+	<!-- Start Customer Reviews -->
+	<div class="customer-reviews-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>TESTIMONIALS</h2>
+						<p>What people are saying about Bonzer Biryani...</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-xl-4 col-md-6 col-sm-12">
+						<div class="card testimonial_card">
+							<div class="card-body">
+								<h5 class="mt-4 mb-0 text-center"><strong class="text-warning text-uppercase">Daniel vebar</strong>
+								</h5>
+
+								<p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem
+									tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel,
+									semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius
+									nibh non aliquet.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 ">
+						<div class="card testimonial_card">
+							<div class="card-body">
+								<h5 class="mt-4 mb-0 text-center"><strong class="text-warning text-uppercase">Paul Mitchel</strong>
+								</h5>
+
+								<p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem
+									tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel,
+									semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius
+									nibh non aliquet.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-xl-4 col-md-6 col-sm-12">
+						<div class="card testimonial_card">
+							<div class="card-body">
+								<h5 class="mt-4 mb-0 text-center"><strong class="text-warning text-uppercase">Steve Fonsi</strong>
+								</h5>
+
+								<p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem
+									tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel,
+									semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius
+									nibh non aliquet.</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="testim_more text-center mt-5">
+						<button class="btn-outline btn more_nfo">
+							<a href="#">View More</a>
+						</button>
+					</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Customer Reviews -->
+
+</head>
+<body>
+
+
+	<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-lg-3 col-md-6">
+					<h3>CONTACT INFORMATION</h3>
+					<p class="lead">India, Maha</p>
+					<p class="lead">+91 8169804018</p>
+					<p><a href="#"> onepotbiryani@gmail.com</a></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>OPENING HOURS</h3>
+					<p class="lead"><span class="text-color">Mon-Fri : </span>8PM - 12AM</p>
+					<p class="lead"><span class="text-color">Sat-Sun : </span>12PM - 12AM</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>EXPLORE OUR SITE</h3>
+					<ul class="footer_link">
+						<li class="footer_link_list"><a href="#">Home</a></li>
+						<li class="footer_link_list"><a href="#">Menu</a></li>
+						<li class="footer_link_list"><a href="#">Our Story</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<ul class="list-inline f-social">
+						<li class="list-inline-item list-icon"><a href="https://www.facebook.com/onepotbiryani"><i
+									class="fa fa-facebook" aria-hidden="true"></i></a>
+						</li>
+						<li class="list-inline-item list-icon"><a
+								href="https://instagram.com/bonzerbiryani?igshid=1ss6mwi0kad4u"><i
+									class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">All Rights Reserved. &copy; 2020 <a href="index.html">Bonzer Biryani</a>
+							<span class="divider">-</span>
+							<a href="privacy.html">Terms of Service</a><br>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</footer>
+	<!-- End Footer -->
+
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;"><i class="fa fa-paper-plane-o"
+			aria-hidden="true"></i></a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- ALL PLUGINS -->
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+	<script src="js/contact-form-script.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
